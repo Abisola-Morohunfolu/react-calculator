@@ -10,18 +10,31 @@
 .output {
 	height: 100px;
 	background-color: #fff;
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+.output p {
+	font-size: 14px;
+	color: #3e3e3e;
+	font-weight: 400;
 }
 
 .calculator {
 	background-color: #fff;
 	border-radius: 4px;
-	width: 20vw;
-	/* min-height: max-content; */
-	/* min-height: 70vh; */
-	padding: 5px;
+	min-width: 20vw;
+	padding: 8px;
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
+	box-shadow: 0 8px 14px rgba(0, 0, 0, 0.15);
+	border: 2px solid transparent;
+	transition: all ease-in-out 0.35s;
+}
+
+.calculator:hover {
+	border: 2px solid #777;
 }
 
 .button-container {
