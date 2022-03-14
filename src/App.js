@@ -24,7 +24,7 @@ function App() {
 		// clear output
 		if (type === 'clear') return setOutput('');
 
-		if (output === '' || output === '0') {
+		if (output === '' || (output === '0' && type === 'digit')) {
 			setOutput(value);
 			return setOperationType(type);
 		}
